@@ -57,3 +57,13 @@ function add (num1, num2) {
         return "fel input";
     }
 }
+
+/*Reflexion uppgift 4
+1:  En terniary operator är ett enkelt och mer kompakt sätt att skriva en if-else sats.
+    Den utvärderar ett villkor och returnerar ett av två värden beroende på om villkoret är sant eller faltskt.
+2:  == lös jämförelsr.
+    === strikt jämförelse, både värdet och datatypen måste vara exakt lika.
+3:  Genom att använda strikta olikhetskontroller med den logiska operatorn &&. 
+    Detta gör att variabeln varken är null eller undefined innan koden i if-satsen körs.
+ */
+
