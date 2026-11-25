@@ -20,3 +20,20 @@ eftersom blocket är nästlat går det inte att komma åt blocket utanför block
 let och const har block scope, de existerar bara i sina block, var har inte block scope och läcker ut utanför blocket.
 
 */
+
+//uppgift 3
+const add = (num1, num2) => num1 + num2;
+console.log(add(2,4));
+
+/*reflexion uppgift 3:
+3.1: om let används kan variabeln add skrivas över men med const skyddas variabelns värde.
+
+
+
+function add2 (num1, num2) {
+    return num1 + num2;
+}
+console.log(add2(2, 8));
+
+Resultates av beräkning skickas tillbaka med en return statement 
+ */
