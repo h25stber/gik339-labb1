@@ -67,3 +67,48 @@ function add (num1, num2) {
     Detta gör att variabeln varken är null eller undefined innan koden i if-satsen körs.
  */
 
+//Uppgift 5:
+
+const num1 = 0;
+let arg1;
+let sum = false;
+
+console.log("test 1");
+sum = add(sum, 1);
+console.log(sum);
+
+console.log("test 2");
+console.log(add("0",3));
+
+console.log("test 3");
+console.log(add(3,"num1"));
+
+console.log("test 4");
+console.log(add(-5, num1));
+
+console.log("test 5");
+console.log(add(arg1,7));
+
+console.log("test 6");
+console.log(add());
+
+console.log("extra tester");
+console.log(add(-10, num1));
+
+console.log("slutgiltiga värdet för num1", num1);
+console.log("slutgiltiga värde för sum", sum);
+
+/* Reflexion uppgift 5:
+1:  Variabel: Variabel är en namngiven behållare som lagrar data i koden t.ex. const num1 = 0;
+    Parameter: Platshållaren i funktionsdefinitionen som tar emote ett värde tex function add(num1,num2))    
+    Argument: Det faktiska värde eller variabeln som skickas in vid funktionsanropet t.ex. add(-5, num1))
+2: Värdet förblir 0. Funktionens parameter num1 existerar bara i funktionens lokala scope och skuggar den yttre konstanten alltså const num1 = 0 som i sin tur gör den yttre variabeln opåverkad av funktionsanropen.
+
+
+3:  Parametrar: num1 får värdet -5 och num2 får värdet 0 från den yttre konstanten-
+    Villkoren utvärderas och loggar true eller false i konsolen.    
+    Ternary operator: -5 utvärderas som truthy som i sin tur loggar truthy i consolen.
+    if-satsen kontrollerar att båda värdena är giltiga siffror alltså inte null, undefined eller NaN.
+    Returnvärde: Beräkningen -5 + 0 utförs ich funktionen returnerar -5
+ */
+
