@@ -22,7 +22,7 @@ let och const har block scope, de existerar bara i sina block, var har inte bloc
 */
 
 //uppgift 3
-const add = (num1, num2) => num1 + num2;
+const addArrow = (num1, num2) => num1 + num2;
 console.log(add(2,4));
 
 /*reflexion uppgift 3:
@@ -37,3 +37,23 @@ console.log(add2(2, 8));
 
 Resultates av beräkning skickas tillbaka med en return statement 
  */
+
+//uppgift 4
+
+// 2-5
+function add (num1, num2) {
+  console.log(num1 == 0);
+  console.log(num2 == '0');
+  console.log(num2 === 0);
+  console.log(num1 == NaN);
+  
+  //6: num1 utvärderas med terniary operator (truthy eller falsy)
+  console.log(num1 ? "truthy" : "falsy");
+  // 7-8
+    if (num1 !== null && num1 !== undefined && typeof num1 === 'number' && !isNaN(num1) &&
+        num2 !== null && num2 !== undefined && typeof num2 === 'number' && !isNaN(num2)){
+        return num1 + num2;
+    } else{
+        return "fel input";
+    }
+}
